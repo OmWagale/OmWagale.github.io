@@ -73,8 +73,6 @@ A database-oriented application designed to record, manage, and track personal e
 **Tech:** Java, MySQL, DBMS
 
 ---
-
-## 🛠️ Tech Stack
 ## 🛠️ Tech Stack
 
 **Languages:** Python · Java · C · SQL
