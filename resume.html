@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume | Om Wagale</title>
+    <meta name="description" content="View or download Om Wagale's resume – education, skills, projects, and experience.">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- Navigation -->
     <header class="navbar">
-        <div class="container nav-container">
+        <div class="nav-container container">
 
             <a href="index.html" class="logo">Om Wagale</a>
 
@@ -20,7 +22,6 @@
                 <a href="about.html">About</a>
                 <a href="skills.html">Skills</a>
                 <a href="projects.html">Projects</a>
-                <a href="training.html">Training</a>
                 <a href="resume.html" class="active">Resume</a>
                 <a href="contact.html">Contact</a>
             </nav>
@@ -28,55 +29,103 @@
         </div>
     </header>
 
-    <main class="page">
 
-        <section class="page-header">
+    <div class="page">
+
+        <!-- Page Header -->
+        <div class="page-header">
             <div class="container">
-
                 <span class="section-tag">MY RESUME</span>
-
                 <h1>Resume</h1>
-
-                <p>
-                    View or download my resume to learn more about my
-                    education, skills, projects, and experience.
-                </p>
-
+                <p>View or download my resume to learn about my education, skills, projects, and experience.</p>
             </div>
-        </section>
+        </div>
 
-        <section class="contact-section">
+
+        <!-- Resume Section -->
+        <section class="resume-section">
             <div class="container">
 
-                <div class="contact-grid">
+                <div class="resume-layout">
 
-                    <div class="contact-content">
-
-                        <span class="section-tag">RESUME</span>
-
+                    <!-- Left: Description -->
+                    <div class="resume-info">
+                        <span class="section-tag">DOCUMENT</span>
                         <h2>My Resume</h2>
-
                         <p>
-                            My resume contains details about my academic
-                            background, technical skills, projects,
-                            training, and experience.
+                            My resume provides a comprehensive overview of my academic background,
+                            technical skills, hands-on projects, and professional experience.
                         </p>
+                        <p>
+                            You can open it directly in your browser or save a copy to your device.
+                        </p>
+
 
                     </div>
 
-                    <div class="contact-cards">
 
-                        <a href="assets/resume/resume.pdf" target="_blank" rel="noopener noreferrer"
-                            class="contact-card">
-                            <span class="card-label">VIEW</span>
-                            <h3>View Resume</h3>
-                            <p>Open resume PDF</p>
+                    <!-- Right: Action Cards -->
+                    <div class="resume-actions">
+
+                        <!-- View Resume -->
+                        <a href="assets/images/resume/Om_Wagale_Resume (2).pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="resume-action-card">
+
+                            <div class="action-icon view-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                </svg>
+                            </div>
+
+                            <div class="action-body">
+                                <h3>View Resume</h3>
+                                <p>Opens in a new browser tab</p>
+                            </div>
+
+                            <div class="action-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                                    <polyline points="7 7 17 7 17 17"></polyline>
+                                </svg>
+                            </div>
+
                         </a>
 
-                        <a href="assets/resume/resume.pdf" download class="contact-card">
-                            <span class="card-label">DOWNLOAD</span>
-                            <h3>Download Resume</h3>
-                            <p>Download PDF</p>
+
+                        <!-- Download Resume -->
+                        <a href="#" onclick="downloadResume(event)" class="resume-action-card download-card">
+
+                            <div class="action-icon download-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                    <polyline points="7 10 12 15 17 10"></polyline>
+                                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                                </svg>
+                            </div>
+
+                            <div class="action-body">
+                                <h3>Download Resume</h3>
+                                <p>Save PDF to your device</p>
+                            </div>
+
+                            <div class="action-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="8 17 12 21 16 17"></polyline>
+                                    <line x1="12" y1="12" x2="12" y2="21"></line>
+                                </svg>
+                            </div>
+
                         </a>
 
                     </div>
@@ -86,15 +135,42 @@
             </div>
         </section>
 
-    </main>
+    </div>
 
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <p>© 2026 Om Wagale. All rights reserved.</p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+
+    <script>
+        function downloadResume(e) {
+            e.preventDefault();
+            var pdfPath = 'assets/images/resume/Om_Wagale_Resume (2).pdf';
+            fetch(pdfPath)
+                .then(function(response) {
+                    if (!response.ok) throw new Error('File not found');
+                    return response.blob();
+                })
+                .then(function(blob) {
+                    var blobUrl = URL.createObjectURL(blob);
+                    var link = document.createElement('a');
+                    link.href = blobUrl;
+                    link.download = 'Om_Wagale_Resume.pdf';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                    setTimeout(function() { URL.revokeObjectURL(blobUrl); }, 1000);
+                })
+                .catch(function() {
+                    // Fallback: open in new tab if fetch fails
+                    window.open(pdfPath, '_blank');
+                });
+        }
+    </script>
 
 </body>
 
