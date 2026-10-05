@@ -113,9 +113,6 @@ https://github.com/OmWagale
 **LinkedIn:**
 https://www.linkedin.com/in/om-wagale-4519b4388
 
-**Email:**
-[omwagale07@gmail.com](mailto:omwagale07@gmail.com)
-
 ---
 
 ## 📈 Current Focus
